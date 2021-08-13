@@ -20,3 +20,19 @@ To srape the data I have used an alternative link because the original site was 
 i did manage to scrape the state name, address and the price. in the price section there are some states which their price is undefined so I removed all the data which is undefined.
 
 
+following version were used in the app
+
+bcrypt==3.2.0
+beautifulsoup4==4.9.3
+email-validator==1.1.3
+Flask==2.0.1
+Flask-Bcrypt==0.7.1
+Flask-Login==0.5.0
+Flask-SQLAlchemy==2.5.1
+Flask-WTF==0.15.1
+matplotlib==3.4.2
+numpy==1.21.1
+pandas==1.3.1
+requests==2.26.0
+WTForms==2.3.3
+
