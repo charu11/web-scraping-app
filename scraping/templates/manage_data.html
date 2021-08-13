@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-top:30px
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+<!-- Page Content -->
+<div style="margin-left:25%">
+  <div class ="manage_data_content" style="margin-top:20px">
+    <form action="/manage_data" method="post" style="margin-left:20%">
+    <button name="scraping" type="submit" style="width:50% ">Scrape Now</button>
+</form>
+   <table>
+
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Price(Dollar)</th>
+                </tr>
+                {% for item in items %}
+                <tr>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.state }}</td>
+                    <td> {{ item.address }}</td>
+                    <td> {{ item.price }}</td>
+
+
+                </tr>
+                {% endfor %}
+        </table>
+
+</div>
+    {% endblock %}

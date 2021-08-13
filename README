@@ -1,0 +1,22 @@
+to set up the environment first install the requirements.txt file. it will install all the necessary libraies that needs to run the program.
+
+after setting up the environment go to the root of the source code and then type "python run.py"
+or if you are using the pycharm just run the file and it will run in python console.
+
+it will run if you dont get any errors.
+
+to check the web app, go to the http://127.0.0.1:5000 to access to the web app.
+after open the webapp first you have to signup to the web application in order to access to the site. after the sign up is completed you will be redirected to the manage_data page where you can scrape the data by pressing the "Scrape Now" button.
+
+after the program is executed then you will see all the data that is gathered by the scraping. 
+
+further you can see the graph view of the analysis by just clicking the "Dashboard" button on the left sided side bar.
+
+
+########  Other Information  ########
+
+To srape the data I have used an alternative link because the original site was forbidden. even though i've managed to get pass the forbidden, it wouldnt last long for much. so I used an alternative which is the same organization website for belgium. 
+
+i did manage to scrape the state name, address and the price. in the price section there are some states which their price is undefined so I removed all the data which is undefined.
+
+
